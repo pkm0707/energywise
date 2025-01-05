@@ -1,0 +1,100 @@
+/* Container Styles */
+.chatbot-container {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  /* Title */
+  .chatbot-title {
+    text-align: center;
+    color: #4caf50;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Paper Styles */
+  .chatbot-paper {
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.8s ease-in-out;
+  }
+  
+  /* Message Styles */
+  .chatbot-message {
+    margin: 10px 0;
+    display: flex;
+  }
+  
+  .user-bubble {
+    background: linear-gradient(90deg, #4caf50, #388e3c); /* Green Gradient */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-align: right;
+    max-width: 75%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .bot-bubble {
+    background: linear-gradient(90deg, #2196f3, #1976d2); /* Blue Gradient */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-align: left;
+    max-width: 75%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  /* Input Box Styles */
+  .chatbot-input-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .chatbot-input {
+    flex: 1;
+  }
+  
+  .chatbot-send-button {
+    background: linear-gradient(90deg, #4caf50, #388e3c);
+    color: white;
+    font-weight: bold;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .chatbot-send-button:hover {
+    background: linear-gradient(90deg, #388e3c, #4caf50);
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
