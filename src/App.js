@@ -50,6 +50,8 @@ import { MdFeedback } from "react-icons/md";
 import { SlEnergy } from "react-icons/sl";
 import { Energyauditqr } from "./components/Energy-Audit/Energyauditqr";
 import { Button } from "@mui/material";
+import { Login } from "./components/Login";
+import { Signup } from "./components/Signup";
 const drawerWidth = 290;
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({
@@ -314,8 +316,8 @@ function App() {
               </Collapse>
             </List>
             <Divider />
-            <Button sx={{color:"red"}}>Log In</Button>
-            <Button sx={{color:"green"}}>Register</Button>
+            <Button sx={{color:"red"}} onClick={()=>{navigate("/login-page")}}>Log In</Button>
+            <Button sx={{color:"green"}}  onClick={()=>{navigate("signup-page")}}>Sign Up</Button>
           </Drawer>
           <Main open={open}>
             <DrawerHeader />
@@ -329,6 +331,8 @@ function App() {
               <Route path="/energy-chatbot" element={<Chatbot/>} />
               <Route path="/carbonfootprint-calculator" element={<Carbonfootprint/>} />
               <Route path="/feedback" element={<Feedback/>} />
+              <Route path="/login-page" element={<Login/>} />
+              <Route path="/signup-page" element={<Signup/>} />
             </Routes>
           </Main>
         </Box>

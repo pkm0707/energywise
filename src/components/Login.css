@@ -1,0 +1,17 @@
+/* Centered Paper Animation */
+.paper {
+    animation: fadeIn 0.5s ease-in-out;
+    background-image: "https://static.vecteezy.com/system/resources/thumbnails/011/635/825/small_2x/abstract-square-interface-modern-background-concept-fingerprint-digital-scanning-visual-security-system-authentication-login-vector.jpg";
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
